@@ -1,0 +1,131 @@
+Options:
+  --verbose = Print details for failures
+
+Legend:
+  - = The test passed
+  X = The test failed
+  T = The transform function itself failed
+  S = The generated code has a syntax error
+
+ConstDeclaration (esbuild):
+----------------------------------------------------------------------------------------------------
+LetDeclaration (esbuild):
+----------------------------------------------------------------------------------------------------
+VarDeclaration (esbuild):
+----------------------------------------------------------------------------------------------------
+TryCatchBinding (esbuild):
+----------------------------------------------------------------------------------------------------
+FunctionStatementArguments (esbuild):
+----------------------------------------------------------------------------------------------------
+FunctionExpressionArguments (esbuild):
+----------------------------------------------------------------------------------------------------
+ArrowFunctionArguments (esbuild):
+----------------------------------------------------------------------------------------------------
+ObjectMethodArguments (esbuild):
+----------------------------------------------------------------------------------------------------
+ClassStatementMethodArguments (esbuild):
+----------------------------------------------------------------------------------------------------
+ClassExpressionMethodArguments (esbuild):
+----------------------------------------------------------------------------------------------------
+ForLoopConst (esbuild):
+----------------------------------------------------------------------------------------------------
+ForLoopLet (esbuild):
+----------------------------------------------------------------------------------------------------
+ForLoopVar (esbuild):
+----------------------------------------------------------------------------------------------------
+ForOfLoopConst (esbuild):
+----------------------------------------------------------------------------------------------------
+ForOfLoopLet (esbuild):
+----------------------------------------------------------------------------------------------------
+ForOfLoopVar (esbuild):
+----------------------------------------------------------------------------------------------------
+AssignmentOperator (esbuild):
+----------------------------------------------------------------------------------------------------
+ForLoop (esbuild):
+----------------------------------------------------------------------------------------------------
+ForOfLoop (esbuild):
+----------------------------------------------------------------------------------------------------
+NamespaceExport (esbuild):
+----------------------------------------------------------------------------------------------------
+
+ConstDeclaration (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+LetDeclaration (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+VarDeclaration (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+TryCatchBinding (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+FunctionStatementArguments (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+FunctionExpressionArguments (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+ArrowFunctionArguments (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+ObjectMethodArguments (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+ClassStatementMethodArguments (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+ClassExpressionMethodArguments (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+ForLoopConst (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+ForLoopLet (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+ForLoopVar (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+ForOfLoopConst (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+ForOfLoopLet (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+ForOfLoopVar (typescript):
+-----X--X------X-----------X-------------------------------X---------X-----X-----------------------X
+AssignmentOperator (typescript):
+-----S--SS-S---S-----------S---S-SS-------S-----S---------SS--X------SS-S--S----------S-SS--S--S---S
+ForLoop (typescript):
+-----S--SS-S---S-----------S---S-SS-------S-----S---------SS--X------SS-S--S----------S-SS--S--S---S
+ForOfLoop (typescript):
+-----S--SS-S---S-----------S---S-SS-------S-----S---------SS--X------SS-S--S----------S-SS--S--S---S
+NamespaceExport (typescript):
+---X-----------X-----------X-------------------------------X---------X--X-----XX--X----------------X
+
+ConstDeclaration (babel):
+-X---X--XX-----X-----------X-----XX-----X-------X---------XX--X------XX-X--X--X-------X-XX--X--X---X
+LetDeclaration (babel):
+-X---X--XX-----X-----------X-----XX-----X-------X---------XX--X------XX-X--X--X-------X-XX--X--X---X
+VarDeclaration (babel):
+-X---X--XX-----X-----------X-----XX-----X-------X---------XX--X------XX-X--X--X-------X-XX--X--X---X
+TryCatchBinding (babel):
+-XX--X--XX----XX-----------X-----XXX----X-------X---------XX--X------XX-X--X--X-------X-XX-XX--XX--X
+FunctionStatementArguments (babel):
+-XX--X--XX----XX-----------X-----XXX----X-------X---------XX--X------XX-X--X--X-------X-XX-XX--XX--X
+FunctionExpressionArguments (babel):
+-XX--X--XX----XX-----------X-----XXX----X-------X---------XX--X------XX-X--X--X-------X-XX-XX--XX--X
+ArrowFunctionArguments (babel):
+-XX--X--XX----XX-----------X-----XXX----X-------X---------XX--X------XX-X--X--X-------X-XX-XX--XX--X
+ObjectMethodArguments (babel):
+-XX--X--XX----XX-----------X-----XXX----X-------X---------XX--X------XX-X--X--X-------X-XX-XX--XX--X
+ClassStatementMethodArguments (babel):
+-XX--X--XX----XX-----------X-----XXX----X-------X---------XX--X------XX-X--X--X-------X-XX-XX--XX--X
+ClassExpressionMethodArguments (babel):
+-XX--X--XX----XX-----------X-----XXX----X-------X---------XX--X------XX-X--X--X-------X-XX-XX--XX--X
+ForLoopConst (babel):
+-X---X--XX-X---X-----------X---X-XX-----X-X-----X---------XX--X------XX-X--X--X-------X-XX--X--X---X
+ForLoopLet (babel):
+-X---X--XX-X---X-----------X---X-XX-----X-X-----X---------XX--X------XX-X--X--X-------X-XX--X--X---X
+ForLoopVar (babel):
+-X---X--XX-X---X-----------X---X-XX-----X-X-----X---------XX--X------XX-X--X--X-------X-XX--X--X---X
+ForOfLoopConst (babel):
+-XX--X--XX----XX-----------X-----XXX----X-------X---------XX--X------XX-X--X--X-------X-XX-XX--XX--X
+ForOfLoopLet (babel):
+-XX--X--XX----XX-----------X-----XXX----X-------X---------XX--X------XX-X--X--X-------X-XX-XX--XX--X
+ForOfLoopVar (babel):
+-XX--X--XX----XX-----------X-----XXX----X-------X---------XX--X------XX-X--X--X-------X-XX-XX--XX--X
+AssignmentOperator (babel):
+-TT--T--TT-T--TT---T------TT---T-TTT----T-T-----T---------TT-TT----T-TTTT--T--T--T----TTTT-TT--TT--T
+ForLoop (babel):
+-TT--T--TT-T--TT---T------TT---T-TTT----T-T-----T---------TT-TT----T-TTTT--T--T--T----TTTT-TT--TT--T
+ForOfLoop (babel):
+-TT--T--TT-T--TT---T-------T---T-TTT----T-T-----T---------TT--T----T-TT-T--T--T--T----TTTT-TT--TT--T
+NamespaceExport (babel):
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
